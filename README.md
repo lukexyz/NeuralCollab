@@ -1,10 +1,6 @@
 # NeuralCollab
 Recommender system using Neural Collaborative Filtering deployed on GCP via FastAPI
 
-# SteamDataset
-
-
-
 
 # Google Cloud 
 Create instance via `Google CLI` in Ubuntu or `WSL`
@@ -35,12 +31,12 @@ gcloud compute instances create $INSTANCE_NAME \
 ```
 
 # FastAPI setup
-
+```sh
 $ pip install fastapi uvicorn
-
 $ git clone https://github.com/lukexyz/NeuralCollab.git
 
-$ cd app
-$ uvicorn app:app
-
+$ cd app  
+$ uvicorn app:app --reload  
+```
+```$ uvicorn (app.py):(app = FastAPI()) --reload```
 
