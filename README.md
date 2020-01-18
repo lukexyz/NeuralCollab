@@ -31,6 +31,16 @@ gcloud compute instances create $INSTANCE_NAME \
 ```
 
 # FastAPI setup
+
+Basic Workflow:
+1. Import Packages
+2. Create Our Route (/predict)
+3. Load our Models and Vectorizer
+4. Receive Input From Endpoint
+5. Vectorize the data/name
+6. Make our predictions
+7. Send Result as JSON
+
 ```sh
 $ pip install fastapi uvicorn
 $ git clone https://github.com/lukexyz/NeuralCollab.git
@@ -39,4 +49,28 @@ $ cd app
 $ uvicorn app:app --reload  
 ```
 ```$ uvicorn (app.py):(app = FastAPI()) --reload```
+
+#### Swagger UI 
+```http://127.0.0.1:8000/docs```  
+This yields the OpenAPI Swagger UI.  
+
+or Redoc  
+```http://127.0.0.1:8000/redoc```  
+This uses the Redoc UI with some documentations out of the box.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
