@@ -7,4 +7,4 @@ COPY . /app
 
 # CMD streamlit run --server.port 8080 --server.enableCORS false app.py
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
