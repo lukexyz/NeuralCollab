@@ -36,7 +36,10 @@ A further `Neural Net Collaborative Filtering` model is trained, which builds on
 $ uvicorn app:app --reload
 ```  
 
-* Test API with Swagger UI ```http://127.0.0.1:8000/docs```    
+* Test with Swagger UI 
+```
+http://127.0.0.1:8000/docs
+```    
 
 * Freeze dependencies and build Dockerfile
 ```sh
@@ -47,7 +50,7 @@ RUN pip3 install -r requirements.txt
 EXPOSE 80
 COPY . /app
 
-CMD ["uvicorn", "app:app", "--host", "127.0.0.1", "--port", "80"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 
