@@ -28,7 +28,9 @@ A is likely to have B’s taste on a different game too. `Pytorch` and `fastai` 
 A further `Neural Net Collaborative Filtering` model is trained, which builds on the collab model by passing the output of the embedding layers
 into a tabular NN before making the final prediction.
 
-### Further work:
+</br>
+
+### Further Work:
 * Put the NN behind the [FastAPI](https://fastapi.tiangolo.com/) wrapper   
 ```sh
 $ uvicorn app:app --reload  
@@ -52,7 +54,14 @@ CMD ["uvicorn", "app:app", "--host", "127.0.0.1", "--port", "80"]
 $ gcloud app deploy
 ```
 
+</br>
 
+#### Work Hours
+`Exercise 1 Pyspark:` 2 hours  
+`Exercise 2 Tableau:` 2-3 hours  
+`Exercise 3 NNCollab:` 6 Hours  
 
+</br>
 
+Luke Woods (January 2020)
 
