@@ -59,11 +59,23 @@ or Redoc
 This uses the Redoc UI with some documentations out of the box.
 
 
+### `GCloud` CLI
 
+```sh
+$ gcloud projects list 
+# Show current project  
+$ gcloud config get-value project  
+$ gcloud config set project [projectname]
+```
 
+##### Deploying the app
+```sh
+$ gcloud app deploy
+# Choose location ([15] us-west2)
 
-
-
+$ gcloud app browser
+# To open your app from the terminal
+```
 
 
 
