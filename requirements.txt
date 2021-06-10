@@ -30,7 +30,7 @@ docutils==0.15.2
 entrypoints==0.3
 enum-compat==0.0.3
 fastai==1.0.59
-fastapi==0.47.0
+fastapi==0.65.2
 fastprogress==0.1.22
 future==0.18.2
 h11==0.9.0
